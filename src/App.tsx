@@ -19,6 +19,7 @@ import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateLiterals/Toast';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
   const personName = {
@@ -87,6 +88,10 @@ function App() {
       />
       <RandomNumber value={10} isPositive />
       <Toast position='center' />
+      <hr />
+      <Text as='h1' size='lg'>Heading</Text>
+      <Text as='p' size='md'>Paragraph</Text>
+      <Text as='label' htmlFor='someId' size='sm' color='secondary'>label</Text>
     </div>
   );
 }
